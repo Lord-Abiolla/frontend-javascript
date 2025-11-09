@@ -1,11 +1,9 @@
-/// <reference path="./Teacher.ts" />
+import { Teacher } from "./Teacher";
 
-namespace Subjects {
-    export class Subject {
-        teacher!: Teacher;
+export class Subject {
+    teacher!: Teacher;
 
-        setTeacher(teacher: Teacher) {
-            this.teacher = teacher;
-        }
+    public setTeacher(teacher: Teacher) {
+        this.teacher = teacher;
     }
 }
